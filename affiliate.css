@@ -10,42 +10,45 @@ body{
     --main-purple:#560BAD;
 }
 
+/* mobile view */
+
 @media screen and (min-width: 320px) {
     .navBar {
-        margin-top: 2rem;
-        margin-left: 12px;
-    }
-    .title {
-       padding-bottom: 6px;
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+        display: flex;
     }
     .menuBar{
-        margin-top: -2rem;
-        display: flex;
+        margin-top: .2rem;
         margin-left: auto;
-        justify-content: flex-end;
+    }
+    .earnMonPromoting{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
     .earnMoney{
         margin-top: 2.8rem;
-        text-align: center;
         font-weight: 500;
         font-size: 32px;
         line-height: 35px;
         letter-spacing: -0.02em;
-        color:#212121
+        color:#212121;
+        width: 85%;
     }
     .earn{
-        color: var(--main-purple)
+        color: var(--main-purple);
     }
     .partnerWith{
-        margin: 1rem auto;
+        margin-top: 1rem;
         color: #424242;
         font-weight: 400;
-        width:70%;
+        width:60%;
         left: 52px;
         height: 89px;
         line-height: 157%;
-        font-size: 14px;
-        text-align: center;
+        font-size: 14px;        
     }
     .twoButtons{
         display: flex;
@@ -55,6 +58,7 @@ body{
         gap:10px;
     }
     .becomeBtn{
+        width: 14.9rem;
         display: flex;
         flex-direction: row;
         background-color:var(--main-purple) ;
@@ -68,6 +72,7 @@ body{
         line-height: 188%;
     }
     .seehowBtn{
+        width: 14.9rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -82,29 +87,35 @@ body{
         border-radius: 4px;
         line-height: 188%;
     }
+    .earnPlusImage{
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
     .boxImage{
-        margin-top:5rem;
+        margin:5rem auto;
         align-items: center;
         justify-content: center;
-        margin-left: 4rem;
         position: relative;
         display: inline-block;
     }
     .chart{
-        margin-top: -17rem;
-        padding-bottom: 12rem;
+        margin-top: -3rem;
+        position: absolute;
         margin-left: 12rem;
-        display: flex;
-        justify-content: flex-end;
+        z-index: 1;
+    }
+    .smilingGirl{
+        z-index: -1;
     }
     .monthlyEarn{
         background-color:#7E3CC9; ;
         border-radius: 13.72px;
-        padding: 9.7px 0px 18.24px 7.76px;
-        gap: 10.09px;
+        padding: 10px 10px 15px 10px;
+        text-align: start;
         display: flex;
         flex-direction: row;
-        align-items: center;
         width:58%;
         color: #FFFFFF;;
         font-weight: 400;
@@ -115,16 +126,18 @@ body{
         top: 60.3%;
         left: -13%;
     }
+    .monthlyEarn span{
+        margin-left: 0.5rem;
+    }
     .monthlyEarn b{
         margin-right: 1rem;
     }
     .logoBox{
         margin: auto;
-        margin-top: 2.7rem;
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        padding: 0 1rem;
     }
     .whyAffiliates{
         font-size: 24px;
@@ -155,7 +168,6 @@ body{
     }
     .manOnMoneyBold {
         font-weight: 700;
-        font-weight: bolder;
         font-size: 16px;
         line-height: 138%;
         padding-bottom: 00.5rem;
@@ -169,20 +181,20 @@ body{
         text-align: center;
         justify-content: center;
         align-items: center;
-        display: flex;
+        display: flex;text-align: center;
         flex-direction: column;
         margin-top: 5rem;
         line-height: 150%;
     }
     .howItWorks{
+        margin-top: 5rem;
+        text-align: center;
         font-weight: 500;
         font-size: 24px;
-        margin-bottom: 2.5rem;
     }
     .signUp{
         font-weight: 700;
         font-size: 16px;
-        font-weight: bold;
         margin-top: 2rem;
     }
     .freeAndEasy{
@@ -200,6 +212,8 @@ body{
         margin-top: 4rem;
         padding-top: 1.5rem;
         padding-bottom: 3rem;
+    }
+    .manOnTieDiv2{
         justify-content: center;
         align-items: center;
         display: flex;
@@ -254,11 +268,14 @@ body{
         color: #424242;
     }
     .whatPeopleSay{
-        margin-top: 2.8rem;
         background-color: #FCF4FF;
         padding-top: 2.5rem;
         padding-bottom: 2rem;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimony{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -398,7 +415,6 @@ body{
     }
     .questions{
         display: flex;
-        flex-direction: row;
         text-align: left;
         margin-top: 2rem;
     }
@@ -434,6 +450,10 @@ body{
         padding-bottom: 2rem;
         background-color: #FAFAFA;
     }
+    .footer a{
+        text-decoration: none;
+        color:#000000;
+    }
     .textandLogo{
         margin-left: 2rem;
     }
@@ -461,4 +481,278 @@ body{
         margin-top:1rem ;
         margin-left: 2rem;
     }
+    .secondHalfTitle{
+        display: none;
+    }
+    .navButton{
+        display: none;
+    }
+    .for{
+        display: none;
+    }
+    .yellowNotification{
+        display: none;
+    }
+    .smilingGirl2{
+        display: none;
+    }
+    .getStartedDesktop{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width:1024px){
+    .navBar{
+        margin: 0;
+        padding: 0.5rem 3rem;
+        background-color: #FAFAFA;
+        display: flex;
+        align-items: center;
+    }
+    .navBar a{
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 30px;
+        color: #000000;
+        margin-left: 0.8rem;
+    }
+    .for{
+        margin-left: 4rem;
+        color: #212121;
+        display: block;
+    }
+    .anAffiliate {
+        padding: 10px 32px;
+        border-radius: 4px;
+        border: none;
+        background-color: var(--main-purple);
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+    .loginBtn{
+        padding: 8px 30px;
+        font-weight: 600;
+        color: var(--main-purple);
+        border: 1px solid #560BAD;
+        border-radius: 4px;
+    }
+    .menuBar{
+        display: none;
+    }
+    .secondHalfTitle{
+        margin-left: auto;
+        display: block;
+        color: #000000;
+        padding-right: 3rem;
+    }
+    .navButton{
+        display: block;
+    }
+    .earnPlusImage{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .earnMonPromoting{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5rem;
+    }
+    .earnMoney{
+        margin-left: 0;
+        width: 55%;
+        text-align: start;
+        font-weight: 600;
+    }
+    .earn{
+        font-style: oblique;
+    }
+    .partnerWith{
+        text-align: start;
+        width: 60%;
+       display: flex;
+    }
+    .twoButtons{
+        display: flex;
+        flex-direction: row;
+    }
+    .becomeBtn{
+        margin-top: 0rem;
+        padding: 16px 32px;
+    }
+    .seehowBtn{
+        padding: 11.6px 30px;
+    }
+    .boxImage{
+        margin-left: auto;
+    }
+    .smilingGirl{
+        display: none;
+    }
+    .chart{
+        width:140px;
+        margin-left: 5rem;
+    }
+    .monthlyEarn{
+        font-size: 14px;
+        line-height: 120%;
+        padding: 15px 3px 15px 12px;
+        width:100%;
+        top: 65%;
+        left: -45%;
+    }
+    .monthlyEarn b{
+        font-size: 18px;
+    }
+    .yellowNotification{
+        display: block;
+        width:40px;
+    }
+    .purpleNotification{
+        display: none;
+    }
+    .smilingGirl2{
+        display: block;
+        width: 350px;
+        margin-left: -5rem;
+    }
+    .logoBox{
+        justify-content: space-around;
+        padding: 0 17rem;
+    }
+    .whyAffiliates{
+        font-weight: 700;
+    }
+    .allPerks{
+        display: flex;
+        margin: 0rem 3rem 0rem 3rem;
+    }
+    .whyAffiliatesPerks{
+        width: 28%;
+    }
+    .manOnMoneyBold{
+        font-weight: 700;
+        font-size: 26px;
+    }
+    .howItWorks{
+        font-weight: 700;
+    }
+    .howItWorksDiv{
+        padding: 0rem 3rem;
+    }
+    .callToAction{
+        display: flex;
+    }
+    .signUp{
+        font-size: 20px;
+    }
+    .freeAndEasy{
+        font-size: 15px;
+        width: 90%;
+    }
+    #becomeAffiliateBtn{
+        padding: 16px 0px 16px 50px;
+    }
+    .manOnTieDesktopView{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 3rem 0rem ;
+    }
+    .disruptingNigeria{
+        width:40%;
+        margin-top: 3rem;
+    }
+    .disruptingNigeria p {
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 117%;
+    }
+    .disruptingNigeria span {
+        font-size: 16px;
+        line-height: 150%;
+        width:89%;
+    }
+    .manOnTieDiv2 img{
+        width: 400px;
+    }
+    .achievements{
+        width:87%;
+        padding: 2rem 0rem ;
+    }
+    .numberOfAffiliates span{
+        font-weight: 700;
+    }
+    #getStartedBtn{
+       display: none;
+    }
+    .getStartedDesktop{
+        display: block;
+        margin: 2rem 13rem 0rem 0rem;
+    }
+    .faqs{
+        width: 80%;
+    }
+    .faqs p{
+        width: 45%;
+    }
+    .allQuestions{
+        width: 50%;
+    }
+    .faqSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .questions button{
+        font-weight: 600;
+        font-family: 'Work Sans', sans-serif;
+    }
+   .clientTestimonies{
+        display: flex;
+        padding: 2rem 10rem 0rem 10rem;
+    }
+   .testimony{
+        align-items: flex-start;  
+        margin: 3rem auto;
+    }
+    .testimony p{
+        margin-top: 3rem;
+        text-align: start;
+        font-weight: 700;
+        font-size: 25px;
+    }
+   .ourClients{
+        text-align: start;
+        width: 80%;
+    }
+    .clients{
+        margin-top: 1rem;
+        width:65%;
+    }
+    .smilingManImg{
+        left:1%;
+        top: 40px;
+    }
+    .credithubIsMyPreferred{
+        text-align: start;   
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer ul{
+        height: 14rem;
+        width: 50rem; 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        line-height: .1rem;
+        margin-top: -1rem;
+    }
+
 }
